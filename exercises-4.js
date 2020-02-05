@@ -17,13 +17,8 @@ function dataHandling2(a){
    var bulan =arr[0].split('/')
    var bulan1 =arr[0].split('/')
    var bul = bulan.slice(1,2)
-   console.log(bul)
 
-   if (bul == 05){
-      console.log('mei')
-   }
-
-   switch(bul){
+   switch(Number(bul)){
       case 01:{
          console.log('Januari')
          break
