@@ -1,8 +1,13 @@
+//input "hello world!"
+//output
+//"!dlrow olleh"
+
+
 function balikString(str){
     var res = ''
     
-    for (var i = a.length-1; i >= 0; i--){
-        res += a[i]
+    for (var i = str.length-1; i >= 0; i--){
+        res += str[i]
     }
     return res
 }
