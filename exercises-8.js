@@ -1,16 +1,26 @@
 function pasanganTerbesar(num) {
     // you can only write your code here!
-    var res
-    for (var i = 0; i < num.length + 1; i ++)
+    var stringNum = String(num)
+    var a = 0
+    var b = 0
+
+
+    for (var i = 0; i < stringNum.length; i ++)
     {
-        res += num[i]
-        console.log(res)
+        a = stringNum[i] + stringNum[i+1]
+        console.log(a)
+        if (a > b){
+            b = a
+        }
+
     }
+    console.log('ini adalah ' +b)
   }
   
   // TEST CASES
-  console.log(pasanganTerbesar(641573)); // 73
-  console.log(pasanganTerbesar(12783456)); // 83
-  console.log(pasanganTerbesar(910233)); // 91
-  console.log(pasanganTerbesar(71856421)); // 85
-  console.log(pasanganTerbesar(79918293)); // 99
+  pasanganTerbesar(134933)
+ // console.log(pasanganTerbesar(641573)); // 73
+  //console.log(pasanganTerbesar(12783456)); // 83
+  //console.log(pasanganTerbesar(910233)); // 91
+  //console.log(pasanganTerbesar(71856421)); // 85
+  //console.log(pasanganTerbesar(79918293)); // 99
