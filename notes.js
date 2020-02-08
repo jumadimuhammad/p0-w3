@@ -113,3 +113,19 @@ for (var i = 0; i < numbers.length; i++) {
 }
 
 console.log(numbers);
+
+
+
+
+var kamus = "abcdefghijklmnopqrstuvwxyz"
+
+for (var i = 0; i < kamus.length; i++) {
+    var temp = []
+    for (var j = 0; j < animals.length; j++) {
+        if (kamus[i] === animals[j][0]) {
+            temp.push(animals[j])
+        }
+    }
+    if (temp.length > 0) res.push(temp)
+}
+return res

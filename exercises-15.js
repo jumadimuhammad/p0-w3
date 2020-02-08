@@ -3,33 +3,21 @@ function groupAnimals(animals) {
 
     var res = []
 
-    // for(var i = 0; i < animals.length; i ++){
+    animals.sort()
+    for(var i = 0; i < animals.length; i ++){
 
-    //     var check = false
+        var check = false
 
-    //     for (var j = 0; j < res.length; j++){
-    //         if (res[j][0][0] == animals[i][0]){
-    //             check = true
-    //             res[j].push(animals[i])
-    //         }
-    //     }
-    //     if (!check){
-    //         res.push([animals[i]])
-    //     }
-    
-       
-    // }
-
-    var kamus = "abcdefghijklmnopqrstuvwxyz"
-
-    for (var i = 0; i < kamus.length; i++) {
-        var temp = []
-        for (var j = 0; j < animals.length; j++) {
-            if (kamus[i] === animals[j][0]) {
-                temp.push(animals[j])
+        for (var j = 0; j < res.length; j++){
+            if (res[j][0][0] == animals[i][0]){
+                check = true
+                res[j].push(animals[i])
             }
         }
-        if (temp.length > 0) res.push(temp)
+        if (!check){
+            res.push([animals[i]])
+        }
+        
     }
     return res
 
